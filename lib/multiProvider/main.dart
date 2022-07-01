@@ -4,7 +4,6 @@ import 'package:provider/provider.dart';
 import 'counter-model.dart';
 import 'counter-view.dart';
 
-
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {

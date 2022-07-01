@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
+import 'counter-model.dart';
+
 class CounterView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
