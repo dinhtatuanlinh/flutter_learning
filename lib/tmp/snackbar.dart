@@ -24,7 +24,7 @@ class _MyAppState extends State<MyApp> with WidgetsBindingObserver{
   double _price = 0;
   final goodsEditingController = TextEditingController(); // mỗi textfield cần có 1 controller
   final priceEditingController = TextEditingController();
-
+  @override
   void  initState(){
     // run after constructor() run
     super.initState();
@@ -34,9 +34,9 @@ class _MyAppState extends State<MyApp> with WidgetsBindingObserver{
   }
   //after initState() the build() will be run
   // and everytime state change build() will be run again
-
+ @override
   void dispose(){
-    //
+    // dispose is called when the screen changed
     super.dispose();
     priceEditingController.dispose();
     WidgetsBinding.instance.removeObserver(this);
